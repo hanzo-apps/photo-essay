@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="csky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05040a"/>
+      <stop offset="0.32" stop-color="#12091a"/>
+      <stop offset="0.56" stop-color="#341423"/>
+      <stop offset="0.74" stop-color="#6e2a2c"/>
+      <stop offset="0.88" stop-color="#b85f2c"/>
+      <stop offset="1" stop-color="#e79a49"/>
+    </linearGradient>
+    <radialGradient id="chaze" cx="0.5" cy="0.86" r="0.55">
+      <stop offset="0" stop-color="#ffcf82" stop-opacity="0.7"/>
+      <stop offset="0.5" stop-color="#f0a24a" stop-opacity="0"/>
+      <stop offset="1" stop-color="#f0a24a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cvig" cx="0.5" cy="0.48" r="0.78">
+      <stop offset="0.5" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.62"/>
+    </radialGradient>
+    <filter id="cgrain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#csky)"/>
+  <ellipse cx="800" cy="900" rx="720" ry="260" fill="url(#chaze)"/>
+  <circle cx="360" cy="120" r="1.2" fill="#ffffff" opacity="0.4"/>
+  <circle cx="1240" cy="96" r="1.1" fill="#ffffff" opacity="0.4"/>
+
+  <g fill="#0a0710">
+    <rect x="0" y="720" width="120" height="280"/>
+    <rect x="120" y="660" width="90" height="340"/>
+    <rect x="210" y="742" width="110" height="258"/>
+    <rect x="320" y="596" width="76" height="404"/>
+    <rect x="396" y="700" width="120" height="300"/>
+    <rect x="516" y="640" width="96" height="360"/>
+    <rect x="612" y="540" width="64" height="460"/>
+    <rect x="676" y="712" width="128" height="288"/>
+    <rect x="804" y="576" width="88" height="424"/>
+    <rect x="892" y="686" width="112" height="314"/>
+    <rect x="1004" y="628" width="92" height="372"/>
+    <rect x="1096" y="726" width="120" height="274"/>
+    <rect x="1216" y="596" width="80" height="404"/>
+    <rect x="1296" y="700" width="128" height="300"/>
+    <rect x="1424" y="656" width="96" height="344"/>
+    <rect x="1520" y="734" width="80" height="266"/>
+  </g>
+
+  <g fill="#ffca7a" opacity="0.72">
+    <rect x="150" y="700" width="7" height="9"/>
+    <rect x="170" y="726" width="7" height="9"/>
+    <rect x="345" y="636" width="7" height="9"/>
+    <rect x="345" y="672" width="7" height="9"/>
+    <rect x="632" y="586" width="7" height="9"/>
+    <rect x="632" y="628" width="7" height="9"/>
+    <rect x="828" y="620" width="7" height="9"/>
+    <rect x="828" y="660" width="7" height="9"/>
+    <rect x="1030" y="672" width="7" height="9"/>
+    <rect x="1238" y="640" width="7" height="9"/>
+    <rect x="1238" y="686" width="7" height="9"/>
+    <rect x="1450" y="700" width="7" height="9"/>
+  </g>
+
+  <rect width="1600" height="1000" fill="url(#cvig)"/>
+  <rect width="1600" height="1000" filter="url(#cgrain)" opacity="0.06" style="mix-blend-mode:overlay"/>
+</svg>

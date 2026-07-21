@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05060b"/>
+      <stop offset="0.32" stop-color="#0b0b1e"/>
+      <stop offset="0.55" stop-color="#26143c"/>
+      <stop offset="0.72" stop-color="#6a2a44"/>
+      <stop offset="0.84" stop-color="#b4553f"/>
+      <stop offset="0.93" stop-color="#e69554"/>
+      <stop offset="1" stop-color="#f2b56a"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.9" r="0.42">
+      <stop offset="0" stop-color="#ffdf9c" stop-opacity="0.95"/>
+      <stop offset="0.45" stop-color="#ffb25e" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ffb25e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="0.5" cy="0.5" r="0.75">
+      <stop offset="0.52" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.6"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <ellipse cx="800" cy="905" rx="640" ry="360" fill="url(#sun)"/>
+
+  <circle cx="240" cy="150" r="1.4" fill="#ffffff" opacity="0.5"/>
+  <circle cx="520" cy="96" r="1.1" fill="#ffffff" opacity="0.4"/>
+  <circle cx="1120" cy="130" r="1.3" fill="#ffffff" opacity="0.45"/>
+  <circle cx="1360" cy="200" r="1" fill="#ffffff" opacity="0.35"/>
+  <circle cx="900" cy="80" r="1.2" fill="#ffffff" opacity="0.4"/>
+
+  <path d="M0,690 C240,640 420,700 640,662 C900,618 1080,690 1320,652 C1460,632 1560,660 1600,648 L1600,1000 L0,1000 Z" fill="#3a2036" opacity="0.72"/>
+  <path d="M0,780 C260,742 460,800 720,760 C980,724 1180,792 1420,756 C1520,742 1580,762 1600,756 L1600,1000 L0,1000 Z" fill="#1a1126" opacity="0.9"/>
+  <path d="M0,872 C300,842 520,890 800,860 C1060,832 1280,888 1520,858 C1560,854 1585,862 1600,860 L1600,1000 L0,1000 Z" fill="#08070d"/>
+
+  <rect width="1600" height="1000" fill="url(#vignette)"/>
+  <rect width="1600" height="1000" filter="url(#grain)" opacity="0.06" style="mix-blend-mode:overlay"/>
+</svg>
